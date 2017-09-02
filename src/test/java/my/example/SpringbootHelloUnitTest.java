@@ -38,7 +38,7 @@ public class SpringbootHelloUnitTest {
     public void testEmployee() throws Exception {
         mockMvc.perform(get("/hello/Vidhya")).andExpect(status().isOk())
                 .andExpect(content().contentType("application/json;charset=UTF-8"))
-                .andExpect(jsonPath("$.id").value("1")).andExpect(jsonPath("$.msg").value("Hello Springboot, Vidhya!"));
+                .andExpect(jsonPath("$.id").value("1")).andExpect(jsonPath("$.msg").value("Hello Springboot!"));
 
     }
 }
